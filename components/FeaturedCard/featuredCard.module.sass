@@ -1,0 +1,134 @@
+.featuredCard
+  max-width: 908px
+  background: #FFF3EB
+  border-radius: 100px
+  padding: 127px 98px 135px
+  margin-right: 24px
+
+.featuredCard:nth-child(2)
+  background: #EFF9F8
+
+.featuredCard:last-child
+  margin-right: 0
+
+.featuredCard__heading
+  font-family: "Craftwork Grotesk", "Calibri", sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 62px
+  line-height: 88px
+  text-transform: uppercase
+  color: #222020
+  margin-bottom: 40px
+  text-align: center
+
+.featuredCard__description
+  font-family: 'Helvetica', sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 24px
+  line-height: 36px
+  letter-spacing: -0.01em
+  text-align: center
+  color: #222020
+  margin-bottom: 40px
+
+.featuredCard:nth-child(2) .tag
+  color: #039182
+
+.tags
+  display: flex
+  margin: 0 auto
+  width: fit-content
+
+.tag
+  font-family: 'Helvetica', sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 24px
+  line-height: 36px
+  letter-spacing: -0.01em
+  color: #8D7365
+  margin-right: 48px
+  position: relative
+
+  &:last-child
+      margin-right: 0
+
+      &::before
+          display: none
+
+  &::before
+    content: '–'
+    position: absolute
+    top: 0
+    right: -30px
+
+@media (max-width: 1739px)
+  .featuredCard
+    padding: 100px 90px 80px 90px
+
+  .featuredCard__heading
+    text-align: center
+
+@media (max-width: 1539px)
+  .featuredCard
+    margin-bottom: 24px
+    padding: 80px 50px
+
+  .featuredCard__heading
+    font-size: 50px
+
+  .featuredCard__description
+    font-size: 22px
+
+  .tag
+    font-size: 20px
+
+@media (max-width: 1399px)
+  .featuredCard
+    margin-right: 0
+    padding: 75px 40px
+
+  .featuredCard__heading
+    font-size: 42px
+
+  .featuredCard__description
+    font-size: 20px
+
+@media (max-width: 1023px)
+  .featuredCard__heading
+    font-size: 40px
+
+  .featuredCard__description
+    font-size: 18px
+
+@media (max-width: 767px)
+  .featuredCard
+    padding: 32px 24px
+    border-radius: 34px
+    margin-bottom: 6px
+
+  .featuredCard__heading
+    font-size: 28px
+    line-height: 34px
+    margin-bottom: 17px
+
+  .featuredCard__description
+    font-size: 16px
+    line-height: 22px
+    margin-bottom: 17px
+
+  .tag
+    font-size: 16px
+    line-height: 22px
+    margin-right: 24px
+
+    &::before
+      top: -2px
+      right: -16px
+
+@media (max-width: 499px)
+  .tags
+    flex-wrap: wrap
+    justify-content: center
