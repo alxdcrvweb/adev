@@ -55,7 +55,7 @@ const AllProjects = () => {
                           <div className="date">06-12-2021</div>
                         </div>
                         <div className="right">
-                          <img src="img/prog3.png" alt="MORPHEUS NFT" />
+                          <img src={el?.logo ? el.logo : "img/prog3.png"} alt="MORPHEUS NFT" />
                         </div>
                       </div>
                     </div>
